@@ -1,0 +1,26 @@
+# Cronache Alpine automatico
+
+Versione ristrutturata del sito:
+
+- `index.html` = struttura pagina
+- `style.css` = grafica
+- `data.js` = dati/notizie
+- `script.js` = interazioni
+- `update_news.py` = raccoglie RSS e aggiorna `data.js`
+- `.github/workflows/update-news.yml` = automazione giornaliera su GitHub Actions
+
+## Come installarlo su GitHub
+
+1. Apri il repository `cronache-alpine`.
+2. Carica questi file sostituendo quelli vecchi.
+3. Assicurati che `index.html` sia nella cartella principale del repository.
+4. Vai su **Actions** e abilita i workflow, se GitHub lo chiede.
+5. Apri il workflow **Aggiorna notizie** e premi **Run workflow** per provarlo subito.
+
+## Fonti RSS
+
+Le fonti sono in `update_news.py`, nella variabile `FEEDS`. Puoi aggiungere o togliere fonti modificando quella lista.
+
+## Nota legale
+
+Il sito mostra titolo, fonte e link all'articolo originale. Evita di copiare integralmente contenuti protetti da copyright.
